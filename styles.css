@@ -18,7 +18,6 @@ body {
   color: var(--text-strong);
 }
 
-/* Shared page wrapper */
 .page {
   min-height: 100vh;
   display: grid;
@@ -27,7 +26,6 @@ body {
   padding: 28px;
 }
 
-/* Card */
 .qr-card {
   width: 100%;
   max-width: 320px;
@@ -62,7 +60,6 @@ body {
   color: var(--text);
 }
 
-/* Attribution (Part 1 footer) */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -73,10 +70,8 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-/* ---------------- Part 2 (grid page) ---------------- */
 
 .page--grid {
-  /* allow scrolling when content is taller than screen */
   place-items: start center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -92,17 +87,14 @@ body {
 
   width: min(1100px, 100%);
 
-  /* 3 cards on first row */
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 
-/* put the 4th card in the middle under the first row */
 .qr-grid__item:nth-child(4) {
   grid-column: 2;
 }
 
-/* < 1000px: one column, scroll to see all 4 */
 @media (max-width: 999px) {
   .qr-grid {
     grid-template-columns: 1fr;
@@ -114,3 +106,4 @@ body {
     grid-column: auto;
   }
 }
+
